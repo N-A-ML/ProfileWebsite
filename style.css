@@ -1,0 +1,26 @@
+body {
+    background-color:black;
+    overflow:hidden; /*hide scrollbars*/
+}
+
+
+
+nav {
+    background-color:slategrey;
+    
+    text-align:space-between;
+    padding-top:2em;
+    padding-bottom:2em;
+    font-size:1em;
+}
+
+nav a {
+    margin-left:20em;
+    font-family: 'Playfair Display', serif;
+    color:white;
+    text-decoration:none;
+}
+
+div {
+    color:white;
+}
