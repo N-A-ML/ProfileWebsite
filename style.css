@@ -4,6 +4,7 @@ body {
     width:100%;
     font-family: 'Titillium Web', sans-serif;
     margin:0;
+    font-size:1em;
 }
 
 canvas {
@@ -16,7 +17,7 @@ nav {
     /* text-align:left; */
     
     
-    padding:1em 1em 1em 0em;
+    padding:0.05em;
     font-size:1.5em;
     
 }
@@ -28,8 +29,44 @@ nav a {
     font-family: 'Playfair Display', serif;
     color:white;
     text-decoration:none;
+    white-space: nowrap;
     
 }
+
+
+ /* make the nav responsive  https://www.freecodecamp.org/news/how-to-create-a-fully-responsive-navbar-with-flexbox-a4435d175dd3/ */
+
+ .navcontainer {  
+    display: flex;  
+    list-style-type:none;   
+
+   
+  }
+
+  .navcontainer > li {  
+    flex: 1;  
+  }
+
+  @media all and (max-width: 600px) {  
+    
+    .navcontainer {  
+      flex-wrap: wrap;  
+    }  
+      
+    .navcontainer > li {  
+      flex-basis: 50%;  
+    }
+  
+  }
+
+  @media all and (max-width: 400px) {  
+    .navcontainer > li {  
+      flex-basis: 100%;  
+    }  
+   
+  }
+
+
 
 div {
     color:white;
@@ -42,14 +79,15 @@ div {
 }
 
 #profiletext {
-   
+  margin:2em 2em 0em 2em;
+
  
 }
 #profilepic img {
     position:absolute;
     border-radius:50%;
-    width:auto;
-    margin-left:2em;
+    width:100%;
+    margin:2em 0em 0em 2em;
     height:auto;
     max-height:400px;
     max-width:450px;
@@ -84,3 +122,20 @@ div {
     width:100%
     
   }
+ 
+
+  /* responsive font-size  */
+  /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  body {
+    font-size: 1em;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 0.6em;
+  }
+}
+ 
