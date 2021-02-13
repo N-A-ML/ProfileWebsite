@@ -81,7 +81,7 @@ async function makemeshes() {
       scene.add(mesh)
     }
 
-    console.log(i)
+    
 
   }
 }
