@@ -225,7 +225,7 @@ canvas {
   font-size:2vmin;
   position:relative;
 
-  text-align: center; 
+  
  }
 
   /* responsive font-size  */
@@ -285,9 +285,9 @@ html, body {
   grid-template-columns: auto auto auto;
   background-color: blue;
   /* padding: 10px; */
-  width:100%;
-  height:100%;
+  
  
+
 
 
   
@@ -299,22 +299,21 @@ html, body {
   border-right: 1px solid rgba(255, 0, 255, 0.267);
   border-bottom: 1px solid rgba(255, 192, 203, 0.466);
   font-size:2.5vw;
-  width:100%;
-  height:100%;
+  width:50%;
+  height:50;
   width:auto;
+  height:auto;
   display:flex; 
   align-items: center;
   text-align:center;
   overflow: hidden;
   
- 
   
   
  
 }
 
  
-  
   
 
 .grid-item-row-1 {
@@ -323,7 +322,10 @@ html, body {
   position: relative;
   grid-gap: 0px;
   min-width:50vw;
+  display:table;
 }
+
+
 .grid-item-row-2 {
   width:50vw;
   height:55vh;
@@ -354,6 +356,18 @@ html, body {
 
   margin-top:-10vh;
 
+}
+
+#BSc {
+}
+#WH {
+  
+}
+
+#MRes {
+}
+
+#Projects {
 }
 
 
