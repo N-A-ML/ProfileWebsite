@@ -18,7 +18,7 @@ renderer.setClearColor("#e5e5e5");
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight)
 
-// var requestID;
+
 document.body.appendChild(renderer.domElement)
 
 // make it responsive
