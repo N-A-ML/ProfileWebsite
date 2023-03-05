@@ -51,7 +51,7 @@ nav {
   z-index:9999;
   margin-right:2vw;
   margin-left:2vw;
-  margin:0;
+
   
   
 }
@@ -212,7 +212,9 @@ canvas {
   .column {
     flex: 50%;
   }
-
+  body {
+      position:relative;
+  }
   footer {
     text-align: center;
     height:5vh;
@@ -231,7 +233,7 @@ canvas {
  footer p {
   margin-bottom:2vh;
   font-size:2vmin;
-  position:relative;
+  position:absolute;
 
   
  }
@@ -259,7 +261,8 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100vh;
+  height: 300%;
+  
 }
 /* .row {
   Width: 100%;
@@ -286,98 +289,126 @@ html, body {
 .d1, .d2 {
   margin-bottom:1%;
   text-align:center;
-} */ 
-
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: blue;
-  margin-top:0;
-  margin-bottom:0;
-
-  /* padding: 10px; */
-  
- 
+} */
 
 
 
+nav { bottom:0;
+}
+iframe {
   
 }
 
-.grid-item {
- 
-  background-color:black;
-  border-right: 1px solid rgba(255, 0, 255, 0.267);
-  border-bottom: 1px solid rgba(255, 192, 203, 0.466);
-  font-size:2.5vw;
+.JDA1 {
   width:50vw;
- 
-  display:flex; 
-  align-items: center;
-  text-align:center;
-  overflow: hidden;
-  margin-top:0;
-  margin-bottom:0;
-  
-  
- 
-}
-
- 
-  
-
-.grid-item-row-1 {
- 
-  position: relative;
-  grid-gap: 0px;
- 
-  display:table;
+  height:50vh;
 }
 
 
-.grid-item-row-2 {
- 
-  position: relative;
-  grid-gap: 0px;
- 
+
+
+#JDA1PDF {
+    display: none;
+   
+}
+
+#JDA1PDF iframe {
+    width: 50vw;
+    height: 20vh;
+}
+
+.JDA1PDF {
   
 }
 
-.grid-item-row-1+ .grid-item-row-2 {
-  grid-column-start: 1;
-}
-
-.divtocenter1, .divtocenter2 {
-  margin: 0;
-  position: absolute;
-  font-size:0.65vmax;
-  max-width: 100%;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
- 
-  max-height:100%;
-}
-
-.divtocenter2 {
-
- 
-
-}
-
-#BSc {
-}
-#WH {
-  
-}
-
-#MRes {
-}
-
-#Projects {
+.JDA2 {
+    width: 50vw;
+    height: 50vh;
 }
 
 
+#JDA2PDF {
+   display:none;
+}
+
+#JDA2PDF iframe {
+    width: 50vw;
+    height: 20vh;
+}
+    #MRes {
+    width: 50vw;
+    height: 50vh;
+}
+
+#DG {
+    width: 50vw;
+    height: 50vh;
+}
+
+
+
+#B1 {
+    margin: 5% 25% 5% 25%;
+    
+
+}
+
+#B2 {
+    margin: 5% 25% 5% 25%;
+}
+
+#B3 {
+    margin: 5% 25% 5% 25%;
+}
+
+#B4 {
+    margin: 5% 25% 5% 25%;
+}
+/*@media (max-width: 667px) {
+    iframe {
+        width: 240px;
+    }
+}
+
+*/
 
 /* css for contact page */
+
+
+button2, button3{
+    display:block;
+    border: 1px solid grey;
+    background-color: transparent;
+    color: white;
+    margin:auto;  
+    z-index:9999;
+    text-align:center;
+    width:50vw;
+}
+
+
+.description {
+    display: block;
+    border: 1px solid grey;
+    background-color: transparent;
+    color: white;
+    margin: auto;
+    z-index: 9999;
+    text-align: center;
+    width: 50vw;
+}
+
+
+
+
+.link {
+    display: block;
+    border: 1px solid grey;
+    background-color: transparent;
+    color: white;
+    margin: auto;
+    z-index: 9999;
+    text-align: center;
+    width: 50vw;
+    text-decoration:none;
+}

@@ -4,53 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nathan's Website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleprojectspage.css">
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 
       @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
   </style>
 </head>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src =navBarFunctions.js> </script>
-<script src=Grid.js> </script>
+
 
 
 <body>
-    
-        
-  <nav>
-    <ul id="nav">
-      <li> <a href="index.html"> Home</a> </li>
-      <li> <a href="second.html"> About</a> </li>
-      <li> <a href="third.html"> Work &amp Education</a> </li>
-      <li> <a href="fourth.html"> Contact </a> </li>
-    </ul>
-    <button>
-      &#9776;
-    </button>
-  </nav>
-    
 
-  <!-- <div class="d1 row border" style="background-color: red;"> Education</div>
-  <div class="d2 row" style="background-color: blue"> Paid Work</div>
-  <div class="d3 row" style="background-color: silver">Voluntary Work</div>
-  <div class="d4 row" style="background-color: black"> Projects </div> -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src=navBarFunctions.js></script>
+    <script src=Data.js></script>
+    <script src=Grid.js></script>
 
-  <div class="grid-container">
-    <div class="grid-item grid-item-row-1" id="BSc"> <div class="divtocenter1"> <h1> BSc Mathematics</h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum velit ad dolorem harum debitis quisquam aliquam assumenda odit, consectetur eveniet sequi, similique tempora nam, consequuntur ex quia rem! At officia qui necessitatibus blanditiis accusantium sit ipsa beatae quam atque optio enim corrupti eius dolorum magni provident, dolor voluptatum aperiam nesciunt.</div> </div>
-    <div class="grid-item grid-item-row-1" id="WH" ><div class="divtocenter1">  <h1> Work History </h1> <h2> Job1</h2>  <h2> Job2</h2> </div> </div>
-    <div class="grid-item grid-item-row-2" id ="MRes">     <div class="divtocenter2"> <h1> MRes Science</h1> Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eius nesciunt cumque dignissimos provident maxime blanditiis omnis repellat animi. Reprehenderit et hic voluptate impedit eos, tenetur alias sapiente aut suscipit odio vitae error fugiat fugit deleniti corrupti eum. Velit repellat quasi ipsam laudantium impedit commodi quas similique, eos incidunt voluptas.</div> </div>
-    <div class="grid-item grid-item-row-2" id="Projects" >    <div class="divtocenter2">   <h1> Projects</h1></div> </div>
-  </div>
+    <nav>
+        <ul id="nav">
+            <li> <a href="index.html"> Home</a> </li>
+            <li> <a href="second.html"> About</a> </li>
+            <li> <a href="third.html"> Work &amp Education</a> </li>
+            <li> <a href="fourth.html"> Contact </a> </li>
+        </ul>
+        <button>
+            &#9776;
+        </button>
+    </nav>
 
+
+    <div id="B1">
+        <div class="description"> test </div>
+
+        <iframe class='JDA1' src="https://onedrive.live.com/embed?resid=CB3036061DA1A05F%2116706&amp;authkey=!AOwJU2Ray5719Ww&amp;em=2&amp;wdAr=1.7777777777777777" width="476px" height="288px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+        <button2 onclick="myFunction()">Click Me</button2>
+        <div id="JDA1PDF">
+            <iframe src="https://onedrive.live.com/embed?cid=CB3036061DA1A05F&resid=CB3036061DA1A05F%2116710&authkey=AMdj6tS40BJ9lVI&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </div>
+
+
+
+    <div id="B2">
+        <div class="description"> test </div>
+        <iframe class="JDA2" src="https://onedrive.live.com/embed?resid=CB3036061DA1A05F%2116705&amp;authkey=!AJxBBKq5JIfXba0&amp;em=2&amp;wdAr=1.7777777777777777" width="476px" height="288px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+        <button3 onclick="myFunction2()">Click Me</button3>
+        <div id="JDA2PDF">
+            <iframe src="https://onedrive.live.com/embed?cid=CB3036061DA1A05F&resid=CB3036061DA1A05F%2116712&authkey=AEAaUWUGlkHDzeo&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </div>
+
+    <div id="B3">
+        <iframe id="MRes" src="https://onedrive.live.com/embed?resid=CB3036061DA1A05F%2116713&amp;authkey=!AFWjfyJDFjc8TfY&amp;em=2&amp;wdAr=1.7777777777777777" width="476px" height="288px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+        <a href="https://www.cambridge.org/core/journals/journal-of-biosocial-science/article/investigating-the-risk-factors-for-contraction-and-diagnosis-of-human-tuberculosis-in-indonesia-using-data-from-the-fifth-wave-of-rands-indonesian-family-life-survey-ifls5/C5D2CCCF81D555D115ACCE3CA43E05C8/share/eb49d7e65d3a46a6c6b10819d3b87441884b13a8" class="link" target=”_blank”> Click here</a>
+
+    </div>
+
+    <div id="B4">
+        <iframe id='DG' src="https://onedrive.live.com/embed?resid=CB3036061DA1A05F%2116715&amp;authkey=!ANXD5saUHlJxKgM&amp;em=2&amp;wdAr=1.7777777777777777" width="476px" height="288px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+        <a href="https://github.com/N-A-ML/Data_Glacier_Final_Project_Week_7_to_13" class="link" target="_blank">Click me</a>
+    </div>
 
 
     <footer>
-      <p>Nathan Adam &#169 2020</p>
-      <!-- <p><a href="mailto:hege@example.com">hege@example.com</a></p> -->
+        <p>Nathan Adam &#169 2020</p>
+        <!-- <p><a href="mailto:hege@example.com">hege@example.com</a></p> -->
     </footer>
-   
+
 
 </body>
 </html>
