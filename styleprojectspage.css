@@ -20,73 +20,57 @@ body {
 
 
 nav {
-  background-color:slategrey;
+    background: linear-gradient( #5b5b3e, #0f0f0a );
+    box-shadow: 0 0 0.5px 5px #555;
     /* text-align:left; */
-     
-     margin:0;
-     position:static;
-    
-     width:100vw;
-     display:flex;
-     align-items: center;
-     justify-content:space-around;
-     height:auto;
-     z-index:9999;
-    
-    
-     /* padding:0.05em; */
-   
-     
-   
-    
+    /*    backdrop-filter: blur(5px);
+*/ margin: 0;
+    position: static;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+    z-index: 9999;
+    /* padding:0.05em; */
 }
 
 
 
-#nav {  
-  background-color:slategrey;
-  display: flex;  
-  list-style-type:none;   
-  width:100vw;
-  z-index:9999;
-  margin-right:2vw;
-  margin-left:2vw;
 
-  
-  
+
+#nav {
+    background: linear-gradient( #5b5b3e, #0f0f0a );
+    box-shadow: 0 0 0.5px 5px #555;
+    display: flex;
+    list-style-type: none;
+    width: 100vw;
+    z-index: 9999;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    margin: 0;
 }
 
-nav a {   
-    
-    
-  
-   
-    font-size:2.5vw;
+nav a {
+    font-size: 1.5vw;
     font-family: 'Playfair Display', serif;
-    color:white;
-    text-decoration:none;
+    color: white;
+    text-decoration: none;
     white-space: nowrap;
-    margin-right:5.75vw;
-    margin-left:5.75vw;
-
+    margin-right: 5.75vw;
+    margin-left: 5.75vw;
     word-wrap: break-word;
-   
     display: inline-block;
-
-  
-     
 }
 
 
 
-button{
-  border:1px solid grey;
-  background-color: transparent;
-  color:white;
-  padding:0px;
-  margin-right:2vw;
-  
- 
+button {
+    border: 1px solid grey;
+    background-color: transparent;
+    color: white;
+    padding: 0px;
+    margin-right: 2vw;
 }
 
 
@@ -215,28 +199,27 @@ canvas {
   body {
       position:relative;
   }
-  footer {
+footer {
     text-align: center;
-    height:5vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background-color: #0047AB;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(#99ccff, #00004d );
     color: white;
     position: absolute;
     bottom: 0;
-    margin:0;
-    
-    width:100%
-    
-  }
- footer p {
-  margin-bottom:2vh;
-  font-size:2vmin;
-  position:absolute;
+    margin: 0;
+    width: 100%;
+    filter: brightness(85%);
+}
 
-  
- }
+    footer p {
+        margin-bottom: 2vh;
+        font-size: 2vmin;
+        position: relative;
+    }
+
 
   /* responsive font-size  */
   /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
@@ -412,3 +395,5 @@ button2, button3{
     width: 50vw;
     text-decoration:none;
 }
+
+

@@ -11,44 +11,51 @@
       @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
   </style>
 </head>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src =navBarFunctions.js> </script>
+
 
 <body>
-    
-        
-  <nav>
-    <ul id="nav">
-      <li> <a href="index.html"> Home</a> </li>
-      <li> <a href="second.html"> About</a> </li>
-      <li> <a href="third.html"> Work &amp Education</a> </li>
-      <li> <a href="fourth.html"> Contact </a> </li>
-    </ul>
-    <button>
-      &#9776;
-    </button>
-  </nav>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src=navBarFunctions.js></script>
 
-  
+    <nav>
+        <ul id="nav">
+            <li> <a href="index.html"> Home</a> </li>
+            <li> <a href="second.html"> About</a> </li>
+            <li> <a href="third.html"> Work &amp Education</a> </li>
+            <li> <a href="fourth.html"> Contact </a> </li>
+        </ul>
+        <button id="navbutton" onClick="reply_click(this.id)">
+            &#9776;
+        </button>
+    </nav>
+    <div id="contactcontent">
+        <div class="form">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="fb17f370-dad2-4705-a79a-140c7b6c3342">
+                <div class="formelement">   Name: <br> <input type="text" name="name" required> </div>
+                <div class="formelement"> Email: <br> <input type="email" name="email" required> </div>
+                <div class="formelement"> Message: <br><textarea name="message" required></textarea></div>
+                <input type="hidden" name="redirect" value="https://web3forms.com/success">
 
-             
-    
-<form method="post" name="myemailform" action="form-to-email.php">
+                <div class="formelement"> <button id="formbutton" type="submit">Submit Form</button></div>
 
-  Enter Name:	<input type="text" name="name">
-  
-  Enter Email Address:	<input type="text" name="email">
-  
-  Enter Message:	<textarea name="message"></textarea>
-  
-  <input type="submit" value="Send Form">
-  </form>
-   
+            </form>
+
+
+        </div>
+
+
+
+        <div id="communication">
+            <img src="images/communication.jpg">
+        </div>
+    </div>
+
 
     <footer>
-      <p>Nathan Adam &#169 2020</p>
-      <!-- <p><a href="mailto:hege@example.com">hege@example.com</a></p> -->
+        <p>Nathan Adam &#169 2023</p>
+        <!-- <p><a href="mailto:hege@example.com">hege@example.com</a></p> -->
     </footer>
-    
+
 </body>
 </html>

@@ -20,40 +20,33 @@ body {
 
 
 nav {
-  background-color:slategrey;
+    background: linear-gradient( #5b5b3e, #0f0f0a );
+    box-shadow: 0 0 0.5px 5px #555;
     /* text-align:left; */
-     
-     margin:0;
-     position:static;
-    
-     width:100vw;
-     display:flex;
-     align-items: center;
-     justify-content:space-around;
-     height:auto;
-     z-index:9999;
-    
-    
-     /* padding:0.05em; */
-   
-     
-   
-    
+/*    backdrop-filter: blur(5px);
+*/    margin: 0;
+    position: static;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+    z-index: 9999;
+    /* padding:0.05em; */
 }
 
 
 
-#nav {  
-  background-color:slategrey;
-  display: flex;  
-  list-style-type:none;   
-  width:100vw;
-  z-index:9999;
-  margin-right:2vw;
-  margin-left:2vw;
-  margin:0;
-  
-  
+#nav {
+    background: linear-gradient( #5b5b3e, #0f0f0a );
+    box-shadow: 0 0 0.5px 5px #555;
+    display: flex;
+    list-style-type: none;
+    width: 100vw;
+    z-index: 9999;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    margin: 0;
 }
 
 nav a {   
@@ -61,7 +54,7 @@ nav a {
     
   
    
-    font-size:2.5vw;
+    font-size:1.5vw;
     font-family: 'Playfair Display', serif;
     color:white;
     text-decoration:none;
@@ -87,6 +80,15 @@ button{
   margin-right:2vw;
   
  
+}
+
+
+#navbutton {
+    border: 1px solid grey;
+    background-color: transparent;
+    color: white;
+    padding: 0px;
+    margin-left:2vw;
 }
 
 
@@ -213,21 +215,21 @@ canvas {
     flex: 50%;
   }
 
-  footer {
+footer {
     text-align: center;
-    height:5vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background-color: #0047AB;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(#99ccff, #00004d );
     color: white;
     position: absolute;
     bottom: 0;
-    margin:0;
-    
-    width:100%
-    
-  }
+    margin: 0;
+    width: 100%;
+    filter: brightness(85%);
+
+}
  footer p {
   margin-bottom:2vh;
   font-size:2vmin;
@@ -381,3 +383,39 @@ html, body {
 
 
 /* css for contact page */
+
+.formelement {
+    margin-left:10vw;
+    display:block;
+    margin-top:1vh;
+}
+
+.form {
+    flex: 0 0 65%;
+}
+
+img {
+    width:25vw;
+    height:20vw;
+}
+
+#communication {
+    flex:1;
+}
+
+    #communication img {
+        object-fit: contain;
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+    }
+
+#contactcontent {
+    display:flex;
+    margin-top:20vh;
+    margin-left:15vw;
+    margin-right:15vw;
+    border:1px solid magenta;
+
+}
